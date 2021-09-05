@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% for f in friend %}
+<h1>{{f.first_name}} {{f.last_name}} {{f.occupation}}</h1>
+{% endfor %}
+
+<form action="/create_friend" method="POST">
+  <label for="fname">First Name:</label>
+  <input class="form-control" type="text" name="fname">
+  <label for="lname">Last Name:</label>
+  <input class="form-control" type="text" name="lname">
+  <label for="occ">Occupation:</label>
+  <input class="form-control" type="text" name="occ">
+  <input class="btn btn-dark" type="submit" value="Add A Friend">
+</form>
+{% endblock %}
