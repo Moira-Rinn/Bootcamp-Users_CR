@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<form action="/create/user" method="POST">
+
+  <input class="form-control" type="text" name="fname" placeholder="First Name">
+  <input class="form-control" type="text" name="lname" placeholder="Last Name">
+  <input class="form-control" type="email" name="email" placeholder="Email">
+  <input class="btn btn-dark" type="submit" value="Add User">
+</form>
+{% endblock %}

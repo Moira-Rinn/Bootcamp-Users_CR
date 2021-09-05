@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>User Details:</h1>
+
+<h2>Id #: {{user.id}} </h2>
+<h2>Name: {{user.last_name}}, {{user.first_name}} </h2>
+<h2>Email: {{user.email}} </h2>
+<h2>Created: {{user.created_at}} </h2>
+<h2>Updated: {{user.updated_at}}</h2>
+
+{% endblock %}

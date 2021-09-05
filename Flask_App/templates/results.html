@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% for u in all_users %}
+  <h1>{{u.first_name}} {{u.last_name}} {{u.email}}</h1>
+{% endfor %}
+
+{% endblock %}
